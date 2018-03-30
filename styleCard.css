@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding:0;
+}
+ .wrapper{
+
+	margin: 0 auto;
+	/*background-color: grey;*/
+	width: 970px;
+	height: 1000px;
+	box-sizing: border-box;
+
+
+ }
+  .header{
+ 	background-color: #006BA9;
+ 	height: 100px;
+ 	width: 970px;
+ 	display: block;
+ 	color: white;
+ 	box-sizing: border-box;
+ 	font-family: sans-serif;
+ 	font-size: 50px;
+ 	padding: 20px 0 40px 20px;
+ 	border-bottom: #333333 solid 5px;
+ }
+ .formss{
+ 	margin: 30px 20px 20px 20px;
+ 	text-align: left;
+ 	width: 280px;
+ 	display:inline-block;
+ 	background-color: #d9d9d9;
+ }
+ .formss label{
+ 	display: block;
+ 	margin: 10px;
+ }
+ #submit_forms{
+ 	display: block;
+ 	margin: 20px 20px 20px 0;
+ 	height: 100px;
+ 	width: 100px;
+
+ }
+ #discrip{
+ 	width: 215px;
+ 	height: 100px;
+ 	text-align: top;
+ 	
+
+ }
+.contactlist{
+	box-sizing: border-box;
+	margin: 30px 20px 20px 0px;
+	width: 615px;
+	background-color: #d9d9d9;
+	display: inline-block;
+	vertical-align: top;
+	height: 800px;
+
+
+}
+#lpo{
+	background-color: #006BA9;
+	color: white;
+	height: 60px;
+	box-sizing: border-box;
+	padding: 20px 0 0px 40px;
+	font-size: 30px;
+}
+
+#lost{border:2px black solid;
+	margin: 20px auto;
+	height: 150px;
+	width: 300px;
+	list-style: none;
+	/*text-align: center;*/
+	box-sizing: border-box;
+	padding: 50px 10px 0 10px;
+	font-size: 30px;
+	background-color: white;
+
+
+
+}
+#see-discrip{
+	font-size:18px;
+	text-decoration: none;
+	background-color: none;
+	border: none;
+}
+.loost{
+	font-size: 15px;
+	padding: 20px;
+	text-align: top;
+
+
+}
+

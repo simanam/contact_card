@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Card</title>
+	<link rel="stylesheet" type="text/css" href="styleCard.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$(document).on("submit", ".formss", function(e){
+				e.preventDefault();
+				var fname = $("#first_name").val();
+				var lname = $("#last_name").val();
+				// var descrip = $("#discrip").val();
+				
+				var data = {"x": fname , "y": lname};
+				var buttonDiscrip = "<p id='see-discrip'>Click for description...</p>"
+				 				
+				$(".formss" ).data("infor", data);
+				// console.log(data);
+				
+				var printConact = '<li id="lost"> ' + data.x  +'  '+ data.y + ' <p> '+ buttonDiscrip+'</p>   </li>'
+
+
+				$('.contactlist').append(printConact);
+
+
+				
+									
+			});
+			$(document).on("click", "#lost", function(){
+				var descrip = $("#discrip").val();
+
+				var printConacta = '<p class="loost"> ' + descrip + '</p>'
+				// $("#lost").css(".loost");
+				$(this).html(printConacta);
+
+
+
+
+
+
+			})
+			
+
+
+
+
+
+		});
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<h1 class="header">Contact Card</h1>
+		<form class="formss">
+			
+			<label>First Name: <input id="first_name" type="text" name="first_name" value="First Name"></label>
+			<label>Last Name: <input type="text" id="last_name" name="last_name" value="Last Name"></label>
+			<label>Description:</label>
+			<textarea id="discrip"> Enter Description..</textarea>
+			
+			<input type="submit" name="submit_form" id="submit_forms" value="Add User">
+		</form>
+		<div class="contactlist">
+			<h3 id="lpo">Contact's</h3>
+							
+			</ul>
+			
+		</div>
+	</div>
+
+</body>
+</html>
